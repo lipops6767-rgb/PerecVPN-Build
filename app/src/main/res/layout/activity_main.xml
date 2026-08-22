@@ -1,0 +1,10 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/perec_background" android:scaleType="centerCrop" android:contentDescription=""/>
+    <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#66000000"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center" android:padding="28dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🌶 ПЕРЕЦ VPN" android:textColor="#FFFFFFFF" android:textSize="34sp" android:textStyle="bold"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Получи свою подписку через Telegram" android:textColor="#FFFFFFFF" android:textSize="17sp" android:gravity="center"/>
+        <Button android:id="@+id/telegramButton" android:layout_width="match_parent" android:layout_height="58dp" android:layout_marginTop="28dp" android:text="ПЕРЕЙТИ В TELEGRAM" android:textStyle="bold" android:textColor="#FFFFFFFF" android:background="@drawable/bg_red_button"/>
+        <Button android:id="@+id/vpnButton" android:layout_width="match_parent" android:layout_height="58dp" android:layout_marginTop="14dp" android:text="У МЕНЯ ЕСТЬ ПОДПИСКА" android:textStyle="bold" android:textColor="#FFFFFFFF" android:background="@drawable/bg_dark_button"/>
+    </LinearLayout>
+</FrameLayout>

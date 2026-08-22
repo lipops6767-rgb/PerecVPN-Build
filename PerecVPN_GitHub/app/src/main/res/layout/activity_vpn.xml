@@ -1,0 +1,12 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="20dp" android:background="#101010">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="🌶 ПЕРЕЦ VPN" android:textColor="#FFFFFFFF" android:textSize="28sp" android:textStyle="bold"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Импортируй ссылку подписки — приложение найдёт VLESS-серверы" android:textColor="#A7A7AD" android:textSize="15sp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:background="@drawable/bg_card" android:padding="14dp" android:orientation="vertical">
+        <EditText android:id="@+id/subscriptionInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="https://perecsub.com/..." android:textColor="#FFFFFFFF" android:textColorHint="#77777D" android:singleLine="true" android:inputType="textUri" android:backgroundTint="#44444A"/>
+        <Button android:id="@+id/pasteButton" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="10dp" android:text="ВСТАВИТЬ ИЗ БУФЕРА" android:textStyle="bold" android:textColor="#FFFFFFFF" android:background="@drawable/bg_dark_button"/>
+        <Button android:id="@+id/updateButton" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="10dp" android:text="ОБНОВИТЬ ПОДПИСКУ" android:textStyle="bold" android:textColor="#FFFFFFFF" android:background="@drawable/bg_red_button"/>
+    </LinearLayout>
+    <TextView android:id="@+id/statusText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="Подписка не загружена" android:textColor="#A7A7AD" android:textSize="15sp"/>
+    <ListView android:id="@+id/serverList" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="8dp" android:dividerHeight="8dp" android:background="#101010"/>
+    <Button android:id="@+id/connectButton" android:layout_width="match_parent" android:layout_height="64dp" android:text="ВКЛЮЧИТЬ VPN" android:textStyle="bold" android:textSize="18sp" android:textColor="#FFFFFFFF" android:background="@drawable/bg_red_button"/>
+</LinearLayout>
