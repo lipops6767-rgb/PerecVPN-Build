@@ -1,4 +1,4 @@
-plugins { id 'com.android.application'; id 'org.jetbrains.kotlin.android' }
+plugins { id 'com.android.application' version '8.7.3' ; id 'org.jetbrains.kotlin.android' }
 
 android {
     namespace 'com.perecvpn.app'
@@ -21,3 +21,4 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0'
     implementation 'net.clever-vpn:libbox-android:2.1.2'
 }
+
