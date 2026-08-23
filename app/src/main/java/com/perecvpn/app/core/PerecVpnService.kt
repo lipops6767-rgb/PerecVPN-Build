@@ -48,6 +48,7 @@ class PerecVpnService : VpnService(), PlatformInterface, CommandServerHandler {
         when (intent?.action) {
             ACTION_STOP -> stopVpn()
             else -> startVpn()
+
         }
         return START_NOT_STICKY
     }
